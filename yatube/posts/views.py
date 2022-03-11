@@ -16,6 +16,8 @@ def index(request):
 
 def group_posts(request, pk):
     template = 'posts/group_list.html'
-    title_post = 'Здесь будет информация о группах проекта Yatube'
-    context = {'title_post': title_post}
+    title_post = 'Страница сообщества'
+    context = {
+        'title_post': title_post,
+    }
     return render(request, template, context)
